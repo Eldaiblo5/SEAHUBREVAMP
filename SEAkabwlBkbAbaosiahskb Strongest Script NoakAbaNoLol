@@ -1,0 +1,309 @@
+-- Gui to Lua -- Version: 3.2 -- Instances: local ScreenGui = Instance.new("ScreenGui") local Frame = Instance.new("Frame") local TextButton = Instance.new("TextButton") local UITextSizeConstraint = Instance.new("UITextSizeConstraint") --Properties: ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui") ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling Frame.Parent = ScreenGui Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26) Frame.BackgroundTransparency = 0.500 Frame.Position = UDim2.new(0.858712733, 0, 0.0237762257, 0) Frame.Size = UDim2.new(0.129513338, 0, 0.227972031, 0) TextButton.Parent = Frame TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255) TextButton.BackgroundTransparency = 1.000 TextButton.Size = UDim2.new(1, 0, 1, 0) TextButton.Font = Enum.Font.SourceSans TextButton.Text = "Example" TextButton.TextColor3 = Color3.fromRGB(0, 0, 0) TextButton.TextScaled = true TextButton.TextSize = 50.000 TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255) TextButton.TextStrokeTransparency = 0.000 TextButton.TextWrapped = true TextButton.MouseButton1Down:Connect(function() 	game:GetService("VirtualInputManager"):SendKeyEvent(true, "F6" , false , game) end) UITextSizeConstraint.Parent = TextButton UITextSizeConstraint.MaxTextSize = 50 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Epic Hub X [Private]", "Midnight")
+local Tab = Window:NewTab("KJ Stuff")
+local Section = Tab:NewSection("KJ Base Moves Animations")
+Section:NewButton("Ravage StartUp", "ButtonInfo", function()
+    		local player = game.Players.LocalPlayer
+        repeat wait() until player.Character.Humanoid 
+        local humanoid = player.Character.Humanoid 
+        local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait() 
+        local UserInputService = game:GetService("UserInputService") 
+       debounce = false -- Activate debounce 
+        local anim = Instance.new("Animation") 
+        anim.AnimationId = "rbxassetid://16945573694" 
+        local playAnim = humanoid:LoadAnimation(anim) 
+        anim.AnimationId = "rbxassetid://0" 
+        local Sound = Instance.new("Sound") 
+        Sound.Parent = character 
+        Sound.SoundId = "rbxassetid://0" 
+        Sound.Playing = true 
+        spawn(function() 
+        wait(1) 
+        debounce = true 
+        end) 
+        playAnim:Play() 
+        playAnim:AdjustSpeed(0.3) 
+        wait(0.3) 
+        playAnim:AdjustSpeed(1) 
+        local Players = game:GetService("Players") 
+        local Character = Players.LocalPlayer.Character or Players.LocalPlayer.CharacterAdded:Wait() 
+        local animationPlayed = false -- Flag to track if the animation has already been played
+        Wait(3)
+end)
+Section:NewButton("Ravage Full Move", "ButtonInfo", function()
+    		local player = game.Players.LocalPlayer
+        repeat wait() until player.Character.Humanoid 
+        local humanoid = player.Character.Humanoid 
+        local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait() 
+        local UserInputService = game:GetService("UserInputService") 
+       debounce = false -- Activate debounce 
+        local anim = Instance.new("Animation") 
+        anim.AnimationId = "rbxassetid://16945550029" 
+        local playAnim = humanoid:LoadAnimation(anim) 
+        anim.AnimationId = "rbxassetid://0" 
+        local Sound = Instance.new("Sound") 
+        Sound.Parent = character 
+        Sound.SoundId = "rbxassetid://0" 
+        Sound.Playing = true 
+        spawn(function() 
+        wait(1) 
+        debounce = true 
+        end) 
+        playAnim:Play() 
+        playAnim:AdjustSpeed(0.3) 
+        wait(0.3) 
+        playAnim:AdjustSpeed(1) 
+        local Players = game:GetService("Players") 
+        local Character = Players.LocalPlayer.Character or Players.LocalPlayer.CharacterAdded:Wait() 
+        local animationPlayed = false -- Flag to track if the animation has already been played
+        Wait(3)
+end)
+Section:NewButton("Ravage Victim", "ButtonInfo", function()
+    		local player = game.Players.LocalPlayer
+        repeat wait() until player.Character.Humanoid 
+        local humanoid = player.Character.Humanoid 
+        local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait() 
+        local UserInputService = game:GetService("UserInputService") 
+       debounce = false -- Activate debounce 
+        local anim = Instance.new("Animation") 
+        anim.AnimationId = "rbxassetid://16945557433" 
+        local playAnim = humanoid:LoadAnimation(anim) 
+        anim.AnimationId = "rbxassetid://0" 
+        local Sound = Instance.new("Sound") 
+        Sound.Parent = character 
+        Sound.SoundId = "rbxassetid://0" 
+        Sound.Playing = true 
+        spawn(function() 
+        wait(1) 
+        debounce = true 
+        end) 
+        playAnim:Play() 
+        playAnim:AdjustSpeed(0.3) 
+        wait(0.3) 
+        playAnim:AdjustSpeed(1) 
+        local Players = game:GetService("Players") 
+        local Character = Players.LocalPlayer.Character or Players.LocalPlayer.CharacterAdded:Wait() 
+        local animationPlayed = false -- Flag to track if the animation has already been played
+        Wait(3)
+end)
+Section:NewButton("Swift sweep", "ButtonInfo", function()
+    		local player = game.Players.LocalPlayer
+        repeat wait() until player.Character.Humanoid 
+        local humanoid = player.Character.Humanoid 
+        local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait() 
+        local UserInputService = game:GetService("UserInputService") 
+       debounce = false -- Activate debounce 
+        local anim = Instance.new("Animation") 
+        anim.AnimationId = "rbxassetid://16944345619" 
+        local playAnim = humanoid:LoadAnimation(anim) 
+        anim.AnimationId = "rbxassetid://0" 
+        local Sound = Instance.new("Sound") 
+        Sound.Parent = character 
+        Sound.SoundId = "rbxassetid://0" 
+        Sound.Playing = true 
+        spawn(function() 
+        wait(1) 
+        debounce = true 
+        end) 
+        playAnim:Play() 
+        playAnim:AdjustSpeed(0.3) 
+        wait(0.3) 
+        playAnim:AdjustSpeed(1) 
+        local Players = game:GetService("Players") 
+        local Character = Players.LocalPlayer.Character or Players.LocalPlayer.CharacterAdded:Wait() 
+        local animationPlayed = false -- Flag to track if the animation has already been played
+        Wait(3)
+end)
+Section:NewButton("Collateral Ruin", "ButtonInfo", function()
+    		local player = game.Players.LocalPlayer
+        repeat wait() until player.Character.Humanoid 
+        local humanoid = player.Character.Humanoid 
+        local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait() 
+        local UserInputService = game:GetService("UserInputService") 
+       debounce = false -- Activate debounce 
+        local anim = Instance.new("Animation") 
+        anim.AnimationId = "rbxassetid://17325254223" 
+        local playAnim = humanoid:LoadAnimation(anim) 
+        anim.AnimationId = "rbxassetid://0" 
+        local Sound = Instance.new("Sound") 
+        Sound.Parent = character 
+        Sound.SoundId = "rbxassetid://0" 
+        Sound.Playing = true 
+        spawn(function() 
+        wait(1) 
+        debounce = true 
+        end) 
+        playAnim:Play() 
+        playAnim:AdjustSpeed(0.3) 
+        wait(0.3) 
+        playAnim:AdjustSpeed(1) 
+        local Players = game:GetService("Players") 
+        local Character = Players.LocalPlayer.Character or Players.LocalPlayer.CharacterAdded:Wait() 
+        local animationPlayed = false -- Flag to track if the animation has already been played
+        Wait(3)
+end)
+local Section = Tab:NewSection("KJ Ult moves Animations")
+Section:NewButton("20 20 20 DropKick", "ButtonInfo", function()
+    		local player = game.Players.LocalPlayer
+        repeat wait() until player.Character.Humanoid 
+        local humanoid = player.Character.Humanoid 
+        local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait() 
+        local UserInputService = game:GetService("UserInputService") 
+       debounce = false -- Activate debounce 
+        local anim = Instance.new("Animation") 
+        anim.AnimationId = "rbxassetid://17354976067" 
+        local playAnim = humanoid:LoadAnimation(anim) 
+        anim.AnimationId = "rbxassetid://0" 
+        local Sound = Instance.new("Sound") 
+        Sound.Parent = character 
+        Sound.SoundId = "rbxassetid://17356346310" 
+        Sound.Playing = true 
+        spawn(function() 
+        wait(1) 
+        debounce = true 
+        end) 
+        playAnim:Play() 
+        playAnim:AdjustSpeed(0.3) 
+        wait(0.3) 
+        playAnim:AdjustSpeed(1) 
+        local Players = game:GetService("Players") 
+        local Character = Players.LocalPlayer.Character or Players.LocalPlayer.CharacterAdded:Wait() 
+        local animationPlayed = false -- Flag to track if the animation has already been played
+        Wait(3)
+end)
+Section:NewButton("20 20 20 DropKick player", "ButtonInfo", function()
+    		local player = game.Players.LocalPlayer
+        repeat wait() until player.Character.Humanoid 
+        local humanoid = player.Character.Humanoid 
+        local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait() 
+        local UserInputService = game:GetService("UserInputService") 
+       debounce = false -- Activate debounce 
+        local anim = Instance.new("Animation") 
+        anim.AnimationId = "rbxassetid://17420452843" 
+        local playAnim = humanoid:LoadAnimation(anim) 
+        anim.AnimationId = "rbxassetid://0" 
+        local Sound = Instance.new("Sound") 
+        Sound.Parent = character 
+        Sound.SoundId = "rbxassetid://0" 
+        Sound.Playing = true 
+        spawn(function() 
+        wait(1) 
+        debounce = true 
+        end) 
+        playAnim:Play() 
+        playAnim:AdjustSpeed(0.3) 
+        wait(0.3) 
+        playAnim:AdjustSpeed(1) 
+        local Players = game:GetService("Players") 
+        local Character = Players.LocalPlayer.Character or Players.LocalPlayer.CharacterAdded:Wait() 
+        local animationPlayed = false -- Flag to track if the animation has already been played
+        Wait(3)
+end)
+Section:NewButton("20 20 20 DropKick victim", "ButtonInfo", function()
+    		local player = game.Players.LocalPlayer
+        repeat wait() until player.Character.Humanoid 
+        local humanoid = player.Character.Humanoid 
+        local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait() 
+        local UserInputService = game:GetService("UserInputService") 
+       debounce = false -- Activate debounce 
+        local anim = Instance.new("Animation") 
+        anim.AnimationId = "rbxassetid://17363256069" 
+        local playAnim = humanoid:LoadAnimation(anim) 
+        anim.AnimationId = "rbxassetid://0" 
+        local Sound = Instance.new("Sound") 
+        Sound.Parent = character 
+        Sound.SoundId = "rbxassetid://0" 
+        Sound.Playing = true 
+        spawn(function() 
+        wait(1) 
+        debounce = true 
+        end) 
+        playAnim:Play() 
+        playAnim:AdjustSpeed(0.3) 
+        wait(0.3) 
+        playAnim:AdjustSpeed(1) 
+        local Players = game:GetService("Players") 
+        local Character = Players.LocalPlayer.Character or Players.LocalPlayer.CharacterAdded:Wait() 
+        local animationPlayed = false -- Flag to track if the animation has already been played
+        Wait(3)
+end)
+Section:NewButton("Stoic Bomb", "ButtonInfo", function()
+    		local player = game.Players.LocalPlayer
+        repeat wait() until player.Character.Humanoid 
+        local humanoid = player.Character.Humanoid 
+        local character = game.Players.LocalPlayer.Character or game.Players.LocalPlayer.CharacterAdded:Wait() 
+        local UserInputService = game:GetService("UserInputService") 
+       debounce = false -- Activate debounce 
+        local anim = Instance.new("Animation") 
+        anim.AnimationId = "rbxassetid://17141153099" 
+        local playAnim = humanoid:LoadAnimation(anim) 
+        anim.AnimationId = "rbxassetid://0" 
+        local Sound = Instance.new("Sound") 
+        Sound.Parent = character 
+        Sound.SoundId = "rbxassetid://0" 
+        Sound.Playing = true 
+        spawn(function() 
+        wait(1) 
+        debounce = true 
+        end) 
+        playAnim:Play() 
+        playAnim:AdjustSpeed(0.3) 
+        wait(0.3) 
+        playAnim:AdjustSpeed(1) 
+        local Players = game:GetService("Players") 
+        local Character = Players.LocalPlayer.Character or Players.LocalPlayer.CharacterAdded:Wait() 
+        local animationPlayed = false -- Flag to track if the animation has already been played
+        local Character = p.Character local Humanoid = Character:WaitForChild("Humanoid") local RootPart = Character:WaitForChild("HumanoidRootPart") local move = Instance.new("BodyVelocity", RootPart) move.MaxForce = Vector3.new(math.huge, 0, math.huge) 
+        Wait(3)
+        
+end)
+Section:NewButton("FIVE SEASONS (vfx and sfx)", "ButtonInfo", function()
+    local p = game.Players.LocalPlayer local Humanoid = p.Character:WaitForChild("Humanoid") local AnimAnim = Instance.new("Animation") AnimAnim.AnimationId = "rbxassetid://18462892217" local Anim = Humanoid:LoadAnimation(AnimAnim) AnimAnim.AnimationId = "rbxassetid://0" Anim:Play() -- Local Script local soundId = 18460952794 -- Correct sound ID -- Create a new Sound instance local sound = Instance.new("Sound") sound.Name = "audio/kj_awakening_varient_2_sfx_only" sound.SoundId = "rbxassetid://" .. soundId sound.Volume = 1 sound.Pitch = 1.0 -- Pitch set to 1.0 sound.PlaybackSpeed = 1.0 -- Adjusted playback speed -- Parent the sound to Workspace sound.Parent = workspace -- Play the sound sound:Play() -- Local Script local soundId = 18460863844 -- Correct sound ID -- Create a new Sound instance local sound = Instance.new("Sound") sound.Name = "audio/kj_awakening_varient_2_sfx_only" sound.SoundId = "rbxassetid://" .. soundId sound.Volume = 1 sound.Pitch = 1.0 -- Pitch set to 1.0 sound.PlaybackSpeed = 1.0 -- Adjusted playback speed -- Parent the sound to Workspace sound.Parent = workspace -- Play the sound sound:Play() wait(0.5) local function stringToCFrame(str) 	local components = {str:match("([^,]+),([^,]+),([^,]+),([^,]+),([^,]+),([^,]+),([^,]+),([^,]+),([^,]+),([^,]+),([^,]+),([^,]+)")} 	for i = 1, #components do 		components[i] = tonumber(components[i]) 	end 	return CFrame.new(unpack(components)) end local ReplicatedStorage = game:GetService("ReplicatedStorage") local player = game.Players.LocalPlayer local character = player.Character or player.CharacterAdded:Wait() local torso = character:FindFirstChild("Torso") local workspace = game:GetService("Workspace") local resourcesFolder = ReplicatedStorage:FindFirstChild("Resources") if not resourcesFolder then return end local fiveSeasonsFX = resourcesFolder:FindFirstChild("FiveSeasonsFX") if not fiveSeasonsFX then return end local jumpFXModel = fiveSeasonsFX:FindFirstChild("JumpFX") if not jumpFXModel then return end local jumpFXPart = jumpFXModel:FindFirstChild("JumpFX") if not jumpFXPart then return end local clonedJumpFX = jumpFXPart:Clone() clonedJumpFX.Parent = workspace local function emitParticles(instance) for _, child in ipairs(instance:GetDescendants()) do if child:IsA("ParticleEmitter") then child.Enabled = true child:Emit(1) child.Enabled = false end end end local function positionOnFloor(part) if torso then local torsoPosition = torso.Position local rayOrigin = torsoPosition + Vector3.new(0, 10, 0) local rayDirection = Vector3.new(0, -20, 0) local raycastResult = workspace:Raycast(rayOrigin, rayDirection) if raycastResult then part.Position = raycastResult.Position - Vector3.new(0, 0.9, 0) end end end emitParticles(clonedJumpFX) positionOnFloor(clonedJumpFX) Wait(3.5) local red4 = game.ReplicatedStorage.Resources.FiveSeasonsFX["CharFX"].ArmBurst.Attachment:Clone() red4.Parent = game.Players.LocalPlayer.Character["Left Arm"] for _, child in ipairs(red4:GetChildren()) do if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter child:Emit(20) -- Emit 20 particles end end local red4 = game.ReplicatedStorage.Resources.FiveSeasonsFX["CharFX"].ArmBurst.a:Clone() red4.Parent = game.Players.LocalPlayer.Character["Left Arm"] for _, child in ipairs(red4:GetChildren()) do if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter child:Emit(20) -- Emit 20 particles end end local red4 = game.ReplicatedStorage.Resources.FiveSeasonsFX["CharFX"].ArmFX:Clone() red4.Parent = game.Players.LocalPlayer.Character["Left Arm"] for _, child in ipairs(red4:GetChildren()) do if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter child:Emit(1) -- Emit 20 particles end end wait(2.1) red4:Destroy() local red4 = game.ReplicatedStorage.Resources.FiveSeasonsFX["CharFX"].EyeEmit:Clone() red4.Parent = game.Players.LocalPlayer.Character["Head"] for _, child in ipairs(red4:GetChildren()) do if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter child:Emit(20) -- Emit 20 particles end end local red4 = game.ReplicatedStorage.Resources.FiveSeasonsFX["CharFX"].ArmBurst.Attachment:Clone() red4.Parent = game.Players.LocalPlayer.Character["Left Arm"] for _, child in ipairs(red4:GetChildren()) do if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter child:Emit(20) -- Emit 20 particles end end local red4 = game.ReplicatedStorage.Resources.FiveSeasonsFX["CharFX"].ArmBurst.a:Clone() red4.Parent = game.Players.LocalPlayer.Character["Left Arm"] for _, child in ipairs(red4:GetChildren()) do if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter child:Emit(20) -- Emit 20 particles end end local red4 = game.ReplicatedStorage.Resources.FiveSeasonsFX["CharFX"].ArmFX:Clone() red4.Parent = game.Players.LocalPlayer.Character["Left Arm"] for _, child in ipairs(red4:GetChildren()) do if child:IsA("ParticleEmitter") then -- Check if the child is a ParticleEmitter child:Emit(1) -- Emit 20 particles end end wait(1.8) red4:Destroy() -- Get the player and their character local player = game.Players.LocalPlayer local character = player.Character or player.CharacterAdded:Wait() local torso = character:WaitForChild("Torso") -- Function to find a descendant recursively by name local function findDescendant(parent, name) local child = parent:FindFirstChild(name) if not child then for _, descendant in ipairs(parent:GetChildren()) do child = findDescendant(descendant, name) if child then break end end end return child end -- Function to duplicate a ParticleEmitter local function duplicateEmitter(originalEmitter) local duplicate = originalEmitter:Clone() duplicate.Parent = originalEmitter.Parent duplicate.Rate = 100 -- Set the rate of the duplicated emitter to 100 initially return duplicate end -- Look for the tpthing ParticleEmitter local replicatedStorage = game:GetService("ReplicatedStorage") local resourcesFolder = replicatedStorage:WaitForChild("Resources", 2) -- Wait for 2 seconds if not immediately found if resourcesFolder then local kjEffectsFolder = resourcesFolder:FindFirstChild("KJEffects") if kjEffectsFolder then local tpThingEmitter = findDescendant(kjEffectsFolder, "tpthing") if tpThingEmitter and tpThingEmitter:IsA("ParticleEmitter") then -- Duplicate the emitter local duplicatedEmitter = duplicateEmitter(tpThingEmitter) -- Parent the duplicated emitter to the character's torso duplicatedEmitter.Parent = torso print("Successfully parented duplicated tpthing ParticleEmitter to Torso and set Rate to 100.") -- Wait for 1.0 seconds wait(0.2) -- Set the rate of the duplicated emitter to 0 duplicatedEmitter.Rate = 0 print("Successfully set Rate of duplicated emitter to 0 after 1.0 seconds.") else warn("Could not find tpthing ParticleEmitter or it is not a ParticleEmitter.") end else warn("Could not find KJEffects folder inside Resources.") end else warn("Could not find Resources folder inside ReplicatedStorage.") end Wait(0.2) local player = game.Players.LocalPlayer local character = player.Character or player.CharacterAdded:Wait() -- Get the player and their character local player = game.Players.LocalPlayer local character = player.Character or player.CharacterAdded:Wait() local leftArm = character:WaitForChild("Left Arm") -- Check if the "ArmEnabled" object exists in the "Left Arm" local armEnabled = leftArm:FindFirstChild("ArmEnabled") if armEnabled then -- Remove the "ArmEnabled" object armEnabled:Destroy() print("Successfully removed ArmEnabled from Left Arm.") else warn("Could not find ArmEnabled in Left Arm.") end local player = game.Players.LocalPlayer local userInputService = game:GetService("UserInputService") local activated = false end
+end)
+
+local Tab = Window:NewTab("Exploits")
+local Section = Tab:NewSection("Esp")
+Section:NewButton("Esp Players", "ButtonInfo", function()
+    print("Clicked")
+end)
+local Section = Tab:NewSection("Stuff")
+Section:NewButton("Tp To random Player", "ButtonInfo", function()
+    print("Clicked")
+end)
+Section:NewButton("Aimbot", "ButtonInfo", function()
+    print("Clicked")
+end)
+Section:NewButton("Speed 100", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+Section:NewButton("No Stun", "ButtonInfo", function()
+    print("Clicked")
+end)
+Section:NewButton("Super Jump 100", "ButtonInfo", function()
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 100
+end)
+local Section = Tab:NewSection("Admin Scripts")
+
+
+local Tab = Window:NewTab("Tsb Scripts")
+local Section = Tab:NewSection("SCRIPTS")
+Section:NewButton("Saitama To GOJO", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Gojo-moveset-need-Saitama-16875"))()
+end)
+Section:NewButton("Saitama To GOJO 2", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Gojo-Moveset-Script-FIX-16704"))()
+end)
+Section:NewButton("JOJO Script", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/h8h88/dfgfdvdf/main/eeeee"))()
+end)
+Section:NewButton("GOKU", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/qPZxkSM8"))()
+end)
+Section:NewButton("Mixed Power fr", "ButtonInfo", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/Y3uyGSK6"))()
+end)
+
+local Tab = Window:NewTab("Credit")
+local Section = Tab:NewSection("Made By || GojoFr")
+local Section1 = Tab:NewSection("Example") 
+Section1:NewKeybind("Toggle ui", "Toggle the ui yes", Enum.KeyCode.K, function() Library:ToggleUI() end)
